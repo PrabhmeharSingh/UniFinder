@@ -1,0 +1,58 @@
+.main
+{
+position:relative;
+top:49;
+}
+#title1
+{
+z-index:10;
+margin:0px;
+position:fixed;
+left:0;
+top:0;
+font: 18px lato;
+color: rgb(25,176,180);
+background-color:black;
+}
+#sitename
+{
+font: bold 25px Lucida-Console, Monospace;
+}
+.titlelink
+{
+display:block;
+}
+#sitep2
+{
+color:white;
+}
+.titlelink>a
+{
+color:white;
+text-decoration:none;
+}
+.titlelink>a:hover
+{
+color: rgb(25,176,180);
+text-decoration:none;
+}
+#userbuttons
+{
+left:6%;
+}
+#loginbutton
+{
+color:black;
+background-color:rgb(25,176,180);
+}
+#signupbutton
+{
+color:black;
+background-color:orange;
+}
+#title2
+{
+font: bold 30px Microsoft-YaHei;
+color:black;
+background-color:rgb(25,176,180);
+}
