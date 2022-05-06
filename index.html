@@ -7,11 +7,12 @@ UniFinder
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script rel="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 <div class="container-fluid row pt-2 pb-2 pr-2 pl-2" id="title1">
-<span class="col-md-3 ml-2 mr-1 my-auto" id="sitename">
-Uni<span id="sitep2">Finder</span>
+<span class="col-3 ml-2 mr-1 my-auto" id="sitename">
+<a href="index.html">Uni<span id="sitep2">Finder</span></a>
 </span>
 <span class="col-md-2 my-auto ml-2 titlelink">
 <a href="https://www.topuniversities.com/qs-world-university-rankings">
@@ -37,8 +38,30 @@ SignUp
 </span>
 </form>
 </div>
+<div class="col-8 text-right" id="smallscreenbuttons">
+<button height="33px" width="33px" id="menudrop" style="border:none;padding:0px;margin:0px;"
+onfocus="showlinks('linkdropdown')" onblur="hidelinks('linkdropdown')">
+<img src="images/menuimg.png" width="33px"  />
+</button>
+<button height="33px" width="33px" id="profilelinks" style="border:none;padding:0px;margin:0px;"
+onfocus="showlinks('profiledropdown')" onblur="hidelinks('profiledropdown')">
+<img src="images/profile.png" width="33px"  />
+</button>
 </div>
-<div class="main container-fluid">
+</div>
+<div id="linkdropdown" onmouseover="mouseoverdropdown(true)" onmouseout="mouseoverdropdown(false)">
+<a href="https://www.topuniversities.com/qs-world-university-rankings">RANKINGS</a>
+<a href=buddyregisterpage>
+PEERCONNECT
+</a>
+</div>
+<div id="profiledropdown" onmouseover="mouseoverdropdown(true)" onmouseout="mouseoverdropdown(false)">
+<a href="">LogIn</a>
+<a href="">
+SignUp
+</a>
+</div>
+<div class="container-fluid" id="main">
 <div class="row" >
 <p class="col-12  text-center" id="title2" >
 The Right Place To Start Your University Search

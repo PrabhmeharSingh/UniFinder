@@ -1,4 +1,4 @@
-.main
+#main
 {
 position:relative;
 top:49;
@@ -17,6 +17,14 @@ background-color:black;
 #sitename
 {
 font: bold 25px Lucida-Console, Monospace;
+}
+#sitename a
+{
+color: rgb(25,176,180);
+}
+#sitename a:hover
+{
+text-decoration:none;
 }
 .titlelink
 {
@@ -56,3 +64,48 @@ font: bold 30px Microsoft-YaHei;
 color:black;
 background-color:rgb(25,176,180);
 }
+#smallscreenbuttons
+{
+left:4%;
+}
+@media only screen and (max-width: 768px)
+{
+.titlelink,#userbuttons
+{
+display:none;
+}
+#smallscreenbuttons
+{
+ display:block;
+}
+}
+@media only screen and (min-width: 768px)
+{
+.titlelink,#userbuttons
+{
+display:block;
+}
+#smallscreenbuttons,#linkdropdown,#profiledropdown
+{
+ display:none;
+}
+}
+#linkdropdown,#profiledropdown {
+  display: none;
+  position: fixed;
+  right:0;
+  top:49px;
+  background-color: black;
+  width:auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 11;
+}
+#linkdropdown a,#profiledropdown a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#profiledropdown>a:hover,#linkdropdown>a:hover
+ {color: rgb(25,176,180); text-decoration:none;}
+
