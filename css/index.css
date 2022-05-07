@@ -63,6 +63,7 @@ background-color:orange;
 font: bold 30px Microsoft-YaHei;
 color:black;
 background-color:rgb(25,176,180);
+margin-bottom:0px;
 }
 #smallscreenbuttons
 {
@@ -108,4 +109,13 @@ display:block;
 }
 #profiledropdown>a:hover,#linkdropdown>a:hover
  {color: rgb(25,176,180); text-decoration:none;}
-
+#imagehere
+{
+background-image: url('../images/index.jpg');
+background-size:cover;
+}
+.introbox
+{
+background-color:0099CC;
+font: bold 25px Microsoft-YaHei;
+}
